@@ -1,0 +1,10 @@
+Ola, seja bem vido ao meu github, me chamo Diego Cardoso, tenho 32 anos,sou estudante de analise e desenvolvimento de sistemas,
+  estudo Java, Kotlin, Spring, Angular, mysql e aws,moro em santo andre sp.
+Espero poder ajudar, estou a disposição!
+
+Diego tu já trabalhou com Java e Spring?
+Resposta: Ja estagiei um tempo, e atualmente aplico esses conhecimentos das tecnologias java e spring em projetos Atuais. Hoje ainda estagiando,
+mas foco Java/Kotlin e Spring e Angular.
+
+
+created branch
