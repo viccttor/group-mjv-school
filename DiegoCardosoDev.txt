@@ -8,3 +8,5 @@ mas foco Java/Kotlin e Spring e Angular.
 
 
 created branch
+
+Além de programar o que você gosta de fazer?
