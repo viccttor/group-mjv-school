@@ -9,3 +9,4 @@
 - Mariana Akeme
 - Osmar Siqueira
 - Victor Henrique
+- Fernanda Albuquerque
