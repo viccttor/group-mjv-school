@@ -10,3 +10,4 @@
 - Osmar Siqueira
 - Victor Henrique
 - Fernanda Albuquerque
+- Marco Aurélio
