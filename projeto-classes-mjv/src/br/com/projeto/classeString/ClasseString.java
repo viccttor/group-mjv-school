@@ -37,7 +37,7 @@ public class ClasseString {
 		case 3:
 
 			String palavra3;
-			System.out.println("Digite seu nome: ");
+			System.out.println("Digite seu nome: "); 
 			palavra3 = scan.next();
 
 			System.out.println("Digite a letra que quer pesquisar no nome: ");
