@@ -35,7 +35,6 @@ public class ClasseString {
 			break;
 
 		case 3:
-
 			String palavra3;
 			System.out.println("Digite seu nome: "); 
 			palavra3 = scan.next();
