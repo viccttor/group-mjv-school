@@ -6,6 +6,7 @@ import java.time.LocalTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Scanner;
 
 public class DatesAndTime {
 
@@ -29,14 +30,30 @@ public class DatesAndTime {
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println("Data e hora:" + localDateTime);
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("---------------------------------");
+        System.out.println("Escolha uma Opção");
+        System.out.println("1 quero saber que dia é hoje");
+        System.out.println("2 quero saber que mes  estamos");
+        System.out.println("3 quero saber que ano estamos");
+        System.out.println("4 quero saber que horas são");
+        System.out.println("---------------------------------");
+        System.out.print("Digite a Opção:");
 
-        /*PEGAR SEPARADAMENTE*/
-        System.out.println("Dia: " + localDateTime.getDayOfMonth());//-> DIA
-        System.out.println("Mes: " + localDateTime.getMonth());//-> MÊS
-        System.out.println("Ano: " + localDateTime.getYear());//-> ANO
-        System.out.println("Hora: " + localDateTime.getHour());//-> HORA
-        System.out.println("Minutos: " + localDateTime.getMinute());//-> MINUTOS
-        System.out.println("Segundos: " + localDateTime.getSecond());//-> SEGUNDOS
+        int op = scan.nextInt();
+
+        switch (op){
+            case  1:
+                System.out.println("Hoje é Dia: " + localDateTime.getDayOfMonth());//-> DIA
+                break;
+            case 2:
+                System.out.println("Estamos no Mes: " + localDateTime.getMonth());//-> MÊS
+                break;
+            case 3:
+                System.out.println("Estamos no Ano: " + localDateTime.getYear());//-> ANO
+                break;
+        }
+
 
     }
 }
