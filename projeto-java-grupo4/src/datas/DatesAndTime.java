@@ -5,6 +5,7 @@ package datas;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
@@ -37,20 +38,23 @@ public class DatesAndTime {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter
                 .ofPattern("dd/MM/yyyy", new Locale("PT", "br"));
 
+        ZonedDateTime zonedDateTime = ZonedDateTime.now();
+        System.out.println("Data e Hora com A Localização: " + zonedDateTime);
+
         /*O MENU VAI RODAR ATÉ QUE RUN SEJA TRUU OPCAO [0] MENU TORNA FALSE E SAI*/
         boolean run = true;
 
         /*inicio do while*/
         while (run) {
-            System.out.println("-----------------------------------+");
-            System.out.println("Escolha uma Opção                  |");
-            System.out.println("[1] - quero saber que dia é hoje   |");
-            System.out.println("[2] - quero saber que mes  estamos |");
-            System.out.println("[3] - quero saber que ano estamos  |");
-            System.out.println("[4] - quero saber que horas são    |");
-            System.out.println("[5] - Data completa formatada      |");
-            System.out.println("[0] - SAIR                         |");
-            System.out.println("-----------------------------------+");
+            System.out.println("-------------------------------------+");
+            System.out.println("Escolha uma Opção                    |");
+            System.out.println("[1] - Quero saber que dia é hoje     |");
+            System.out.println("[2] - Quero saber que mes  estamos   |");
+            System.out.println("[3] - Quero saber que ano estamos    |");
+            System.out.println("[4] - Quero saber que horas são      |");
+            System.out.println("[5] - Exibir Data completa Formatada |");
+            System.out.println("[0] - SAIR                           |");
+            System.out.println("-------------------------------------+");
             System.out.print("Digite a Opção: ");
 
 
