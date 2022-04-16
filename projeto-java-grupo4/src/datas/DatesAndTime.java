@@ -1,11 +1,17 @@
 package datas;
 
+
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+/**
+ * @author diegocardosodev
+ * @version 1.0
+ */
 public class DatesAndTime {
 
     public static void main(String[] args) {
@@ -27,11 +33,14 @@ public class DatesAndTime {
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println("Data e hora:" + localDateTime);
 
-        /*FORMATAÇÃO DE DATA PARA PORTUGUES BR*/
+        /*FORMATAÇÃO DE DATA PADRÃO PORTUGUES BR*/
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter
                 .ofPattern("dd/MM/yyyy", new Locale("PT", "br"));
 
+        /*O MENU VAI RODAR ATÉ QUE RUN SEJA TRUU OPCAO [0] MENU TORNA FALSE E SAI*/
         boolean run = true;
+
+        /*inicio do while*/
         while (run) {
             System.out.println("-----------------------------------+");
             System.out.println("Escolha uma Opção                  |");
@@ -43,7 +52,6 @@ public class DatesAndTime {
             System.out.println("[0] - SAIR                         |");
             System.out.println("-----------------------------------+");
             System.out.print("Digite a Opção: ");
-
 
 
             Scanner scan = new Scanner(System.in);
@@ -71,9 +79,10 @@ public class DatesAndTime {
                     break;
                 case 0:
                     System.out.println("saindo...");
-                    run = false;
+                    run = false;//SAI DO MENU DE OPÇOES
             }
         }
+        /*fim do while*/
 
 
     }
