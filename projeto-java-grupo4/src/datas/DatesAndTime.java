@@ -29,6 +29,7 @@ public class DatesAndTime {
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println("Data e hora:" + localDateTime);
 
+
         /*PEGAR SEPARADAMENTE*/
         System.out.println("Dia: " + localDateTime.getDayOfMonth());//-> DIA
         System.out.println("Mes: " + localDateTime.getMonth());//-> MÊS
