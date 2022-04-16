@@ -31,35 +31,48 @@ public class DatesAndTime {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter
                 .ofPattern("dd/MM/yyyy", new Locale("PT", "br"));
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("-----------------------------------+");
-        System.out.println("Escolha uma Opção                  |");
-        System.out.println("[1] - quero saber que dia é hoje   |");
-        System.out.println("[2] - quero saber que mes  estamos |");
-        System.out.println("[3] - quero saber que ano estamos  |");
-        System.out.println("[4] - quero saber que horas são    |");
-        System.out.println("[5] - Data completa formatada      |");
-        System.out.println("-----------------------------------+");
-        System.out.print("Digite a Opção:");
+        boolean run = true;
+        while (run) {
+            System.out.println("-----------------------------------+");
+            System.out.println("Escolha uma Opção                  |");
+            System.out.println("[1] - quero saber que dia é hoje   |");
+            System.out.println("[2] - quero saber que mes  estamos |");
+            System.out.println("[3] - quero saber que ano estamos  |");
+            System.out.println("[4] - quero saber que horas são    |");
+            System.out.println("[5] - Data completa formatada      |");
+            System.out.println("[0] - SAIR                         |");
+            System.out.println("-----------------------------------+");
+            System.out.print("Digite a Opção: ");
 
-        int op = scan.nextInt();
 
-        switch (op){
-            case  1:
-                System.out.println("Hoje é Dia: " + localDateTime.getDayOfMonth());//-> DIA
-                break;
-            case 2:
-                System.out.println("Estamos no Mes: " + localDateTime.getMonth());//-> MÊS
-                break;
-            case 3:
-                System.out.println("Estamos no Ano: " + localDateTime.getYear());//-> ANO
-                break;
-            case 4:
-                System.out.println("Hora:" + localTime);
-                break;
-            case 5:
-                System.out.println("Data Formatada: " + localDateTime.format(dateTimeFormatter));
-                break;
+
+            Scanner scan = new Scanner(System.in);
+            int op = scan.nextInt();
+            switch (op) {
+                case 1:
+                    System.out.println("-----------------------------------+");
+                    System.out.println("Hoje é Dia: " + localDateTime.getDayOfMonth());//-> DIA
+                    break;
+                case 2:
+                    System.out.println("-----------------------------------+");
+                    System.out.println("Estamos no Mes: " + localDateTime.getMonth());//-> MÊS
+                    break;
+                case 3:
+                    System.out.println("-----------------------------------+");
+                    System.out.println("Estamos no Ano: " + localDateTime.getYear());//-> ANO
+                    break;
+                case 4:
+                    System.out.println("-----------------------------------+");
+                    System.out.println("Hora:" + localTime);
+                    break;
+                case 5:
+                    System.out.println("-----------------------------------+");
+                    System.out.println("Data Formatada: " + localDateTime.format(dateTimeFormatter));
+                    break;
+                case 0:
+                    System.out.println("saindo...");
+                    run = false;
+            }
         }
 
 
