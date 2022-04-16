@@ -3,10 +3,8 @@ package datas;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Scanner;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 public class DatesAndTime {
 
@@ -29,14 +27,19 @@ public class DatesAndTime {
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println("Data e hora:" + localDateTime);
 
+        /*FORMATAÇÃO DE DATA PARA PORTUGUES BR*/
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter
+                .ofPattern("dd/MM/yyyy", new Locale("PT", "br"));
+
         Scanner scan = new Scanner(System.in);
-        System.out.println("---------------------------------+");
-        System.out.println("Escolha uma Opção                |");
-        System.out.println("1 - quero saber que dia é hoje   |");
-        System.out.println("2 - quero saber que mes  estamos |");
-        System.out.println("3 - quero saber que ano estamos  |");
-        System.out.println("4 - quero saber que horas são    |");
-        System.out.println("---------------------------------+");
+        System.out.println("-----------------------------------+");
+        System.out.println("Escolha uma Opção                  |");
+        System.out.println("[1] - quero saber que dia é hoje   |");
+        System.out.println("[2] - quero saber que mes  estamos |");
+        System.out.println("[3] - quero saber que ano estamos  |");
+        System.out.println("[4] - quero saber que horas são    |");
+        System.out.println("[5] - Data completa formatada      |");
+        System.out.println("-----------------------------------+");
         System.out.print("Digite a Opção:");
 
         int op = scan.nextInt();
@@ -50,6 +53,12 @@ public class DatesAndTime {
                 break;
             case 3:
                 System.out.println("Estamos no Ano: " + localDateTime.getYear());//-> ANO
+                break;
+            case 4:
+                System.out.println("Hora:" + localTime);
+                break;
+            case 5:
+                System.out.println("Data Formatada: " + localDateTime.format(dateTimeFormatter));
                 break;
         }
 
