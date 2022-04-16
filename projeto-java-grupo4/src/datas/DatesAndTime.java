@@ -16,8 +16,7 @@ public class DatesAndTime {
         Date date = new Date();
         Calendar calendar= new GregorianCalendar();
 
-        /*NOVAS CLASSES TIME LOCALDATE TIME*/
-
+        /*NOVAS CLASSES TIME LOCALDATETIME*/
         /*GERANDO DATA*/
         LocalDate localDate = LocalDate.now();
         System.out.println("Localdate:" + localDate);
@@ -31,13 +30,13 @@ public class DatesAndTime {
         System.out.println("Data e hora:" + localDateTime);
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("---------------------------------");
-        System.out.println("Escolha uma Opção");
-        System.out.println("1 quero saber que dia é hoje");
-        System.out.println("2 quero saber que mes  estamos");
-        System.out.println("3 quero saber que ano estamos");
-        System.out.println("4 quero saber que horas são");
-        System.out.println("---------------------------------");
+        System.out.println("---------------------------------+");
+        System.out.println("Escolha uma Opção                |");
+        System.out.println("1 - quero saber que dia é hoje   |");
+        System.out.println("2 - quero saber que mes  estamos |");
+        System.out.println("3 - quero saber que ano estamos  |");
+        System.out.println("4 - quero saber que horas são    |");
+        System.out.println("---------------------------------+");
         System.out.print("Digite a Opção:");
 
         int op = scan.nextInt();
