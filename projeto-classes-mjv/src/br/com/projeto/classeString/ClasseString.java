@@ -1,69 +1,90 @@
 package br.com.projeto.classeString;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+/**
+ * @author Osmarcode
+ * @version 1.0
+ */
+
 public class ClasseString {
-	
+
 	static int opcao;
 
 	public static void main(String[] args) {
 
+		// método para letura de dados de entrada via teclado
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Escolha uma Opção");
-		StringBuilder opcoes = new StringBuilder();
-		opcoes.append("Opção 1 - Formatar um texto para MAIÚSCULAS\n")
-				.append("Opção 2 - Formatar um texto para minúsculas\n")
-				.append("Opção 3 - Verificando se um texto contêm determinada letra\n")
-				.append("Opção 4 - Vai comparar palavras e ignorar se estiver em caixa alta ou não\n");
-		System.out.println(opcoes.toString());
-		opcao = scan.nextInt();
 
-		switch (opcao) {
+		boolean run = true;
 
-		case 1:
-			System.out.println("Qual palavra deseja converter para Maiúscula? ");
-			String palavra = scan.next();
-			System.out.println(palavra.toUpperCase());
+		/* inicio do while */
+		// enquanto opcao igual a true vai continuar perguntando, quando escolher opção
+		// 0 vai sair
+		while (run) {
+			System.out.println("--------------------------------------------------------------------------+");
+			System.out.println("Escolha uma Opção                                                         |");
+			System.out.println("[1] - Quero formatar um texto para MAIÚSCULAS                             |");
+			System.out.println("[2] - Quero formatar um teto para minúsculas                              |");
+			System.out.println("[3] - Quero verificar se um texto contém determinada letra                |");
+			System.out.println("[4] - Quero comparar e ignorar duas palavras sendo MAIPUSCULAS/minúsculas |");
+			System.out.println("[0] - Sair do programa.                                                   |");
+			System.out.println("--------------------------------------------------------------------------+");
+			System.out.print("Digite a Opção: ");
+			opcao = scan.nextInt(); //
 
-			break;
+			switch (opcao) {
+			case 1:
+				System.out.println("---------------------------------------------------------------------------+");
+				System.out.println("Qual palavra deseja converter para Maiúscula? ");
+				String palavra = scan.next();
+				System.out.println(palavra.toUpperCase());
 
-		case 2:
-			System.out.println("Qual palavra deseja converter para Minúscula? ");
-			String palavra2 = scan.next();
-			System.out.println(palavra2.toLowerCase());
+				break;
 
-			break;
+			case 2:
+				System.out.println("---------------------------------------------------------------------------+");
+				System.out.println("Qual palavra deseja converter para Minúscula? ");
+				String palavra2 = scan.next();
+				System.out.println(palavra2.toLowerCase());
 
-		case 3:
-			String palavra3;
-			System.out.println("Digite seu nome: "); 
-			palavra3 = scan.next();
+				break;
 
-			System.out.println("Digite a letra que quer pesquisar no nome: ");
-			String letra = scan.next();
+			case 3:
+				System.out.println("---------------------------------------------------------------------------+");
+				String palavra3;
+				System.out.println("Digite seu nome: ");
+				palavra3 = scan.next();
 
-			if (palavra3.contains(letra)) {
-				System.out.println("Na palavra " + palavra3 + " existe a letra: " + letra);
-			} else {
-				System.out.println("Na palavra " + palavra3 + " não existe a letra: " + letra);
+				System.out.println("Digite a letra que quer pesquisar no nome: ");
+				String letra = scan.next();
+
+				if (palavra3.contains(letra)) {
+					System.out.println("Na palavra " + palavra3 + " existe a letra: " + letra);
+				} else {
+					System.out.println("Na palavra " + palavra3 + " não existe a letra: " + letra);
+				}
+
+				break;
+
+			case 4:
+				System.out.println("---------------------------------------------------------------------------+");
+				String java = "java";
+				String JAVA = "JAVA";
+				String Javax = "Javax";
+				System.out.println("java é igual à JAVA ? " + java.equalsIgnoreCase(JAVA));
+				System.out.println("java é igual à Javax ? " + java.equalsIgnoreCase(Javax));
+
+				break;
+
+			default:
+				System.out.println("Saindo do programa...\n");
+				run = false;
 			}
-
-			break;
-
-		case 4:
-			String java = "java";
-			String JAVA = "JAVA";
-			String Javax = "Javax";
-			System.out.println("java é igual à JAVA ? " + java.equalsIgnoreCase(JAVA));
-			System.out.println("java é igual à Javax ? " + java.equalsIgnoreCase(Javax));
-
-			break;
-
-		default:
-			System.out.println("Essa opção não existe.");
+			;
 
 		}
-		;
-
 	}
 }
