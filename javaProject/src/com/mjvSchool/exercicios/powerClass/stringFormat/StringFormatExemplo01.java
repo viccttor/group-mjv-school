@@ -4,6 +4,7 @@ package com.mjvSchool.exercicios.powerClass.stringFormat;
  * @author osmarcode
  * 
  */
+
 import java.util.Scanner;
 
 public class StringFormatExemplo01 {
@@ -27,7 +28,7 @@ public class StringFormatExemplo01 {
 			System.out.println("[0] - Sair do programa.                                                   |");
 			System.out.println("--------------------------------------------------------------------------+");
 			System.out.print("Digite a Opção: ");
-			opcao = scan.nextInt(); //
+			int opcao = scan.nextInt(); //
 
 			switch (opcao) {
 			case 1:

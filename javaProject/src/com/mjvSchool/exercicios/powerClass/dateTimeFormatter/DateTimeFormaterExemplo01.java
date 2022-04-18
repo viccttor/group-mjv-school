@@ -1,7 +1,7 @@
 package com.mjvSchool.exercicios.powerClass.dateTimeFormatter;
 
 /**
- * @author osmarcode
+ * @author osmarcode	
  */
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -24,11 +24,11 @@ public class DateTimeFormaterExemplo01 {
 		/* NOVAS CLASSES TIME LOCALDATETIME */
 		/* GERANDO DATA */
 		LocalDate localDate = LocalDate.now();
-		System.out.println("Localdate: " + localDate);
+		//System.out.println("Localdate: " + localDate);
 
 		/* GERAR HORA */
 		LocalTime localTime = LocalTime.now();
-		System.out.println("Hora: " + localTime);
+		//System.out.println("Hora: " + localTime);
 
 		/* LOCALDATETIME DATA E HORA */
 		LocalDateTime localDateTime = LocalDateTime.now();
@@ -38,7 +38,7 @@ public class DateTimeFormaterExemplo01 {
 		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy", new Locale("PT", "br"));
 
 		ZonedDateTime zonedDateTime = ZonedDateTime.now();
-		System.out.println("Data e Hora com A Localização: " + zonedDateTime);
+		//System.out.println("Data e Hora com A Localização: " + zonedDateTime);
 
 		/*
 		 * O MENU VAI RODAR ATÉ QUE RUN SEJA TRUE OPCAO [6] MENU TORNA FALSE ENTRA NO
@@ -48,16 +48,16 @@ public class DateTimeFormaterExemplo01 {
 
 		/* inicio do while */
 		while (run) {
-			System.out.println("-------------------------------------+");
-			System.out.println("Escolha uma Opção                    |");
-			System.out.println("[1] - Quero saber que dia é hoje     |");
-			System.out.println("[2] - Quero saber que mes  estamos   |");
-			System.out.println("[3] - Quero saber que ano estamos    |");
-			System.out.println("[4] - Quero saber que horas são      |");
-			System.out.println("[5] - Exibir Data completa Formatada |");
-			System.out.println("[6] - SAIR                           |");
-			System.out.println("-------------------------------------+");
-			System.out.print("Digite a Opção: ");
+			System.out.println("---------------------------------------------------------------------------------------------------------------------+");
+			System.out.println("Escolha uma Opção:                                                                                                   |\n");
+			System.out.print("[1] - Quero saber que dia é hoje     ");
+			System.out.print("\t[2] - Quero saber que mes  estamos   ");
+			System.out.print("\t[3] - Quero saber que ano estamos    |\n");
+			System.out.print("[4] - Quero saber que horas são      ");
+			System.out.print("\t[5] - Exibir Data completa Formatada ");
+			System.out.print("\t[6] - SAIR                           |\n");
+			System.out.println("--------------------------------------------------------------------------------------------------------------------+");
+			System.out.print("\nDigite a Opção: ");
 			Scanner scan = new Scanner(System.in);
 			int op = scan.nextInt();
 
