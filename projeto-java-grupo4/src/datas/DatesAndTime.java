@@ -2,10 +2,7 @@ package datas;
 
 
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.ZonedDateTime;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
@@ -26,8 +23,11 @@ public class DatesAndTime {
         LocalDate localDate = LocalDate.now();
         System.out.println("Localdate:" + localDate);
 
+        LocalDate dt = LocalDate.of(1990, Month.MAY, 8);
+        System.out.println("Meu Aniversário: " + dt);
+
         /*GERAR HORA*/
-        LocalTime localTime = LocalTime.now();
+        LocalTime localTime = LocalTime.now().minusHours(1);
         System.out.println("Hora:" + localTime);
 
         /*LOCALDATETIME DATA E HORA*/
@@ -36,12 +36,16 @@ public class DatesAndTime {
 
         /*FORMATAÇÃO DE DATA PADRÃO PORTUGUES BR*/
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter
-                .ofPattern("dd/MM/yyyy", new Locale("PT", "br"));
+                .ofPattern("dd/MM/yyyy HH:mm:ss", new Locale("PT", "br"));
 
-        ZonedDateTime zonedDateTime = ZonedDateTime.now();
+        /*LOCAZIZACAO*/
+        ZonedDateTime zonedDateTime = java.time.ZonedDateTime
+                .of(localDate,localTime, ZoneId.of("America/Sao_Paulo"));
         System.out.println("Data e Hora com A Localização: " + zonedDateTime);
 
-        /*O MENU VAI RODAR ATÉ QUE RUN SEJA TRUU OPCAO [0] MENU TORNA FALSE E SAI*/
+
+
+        /*O MENU VAI RODAR ATÉ QUE RUN SEJA TRUE OPCAO [0] MENU TORNA FALSE E SAI*/
         boolean run = true;
 
         /*inicio do while*/
