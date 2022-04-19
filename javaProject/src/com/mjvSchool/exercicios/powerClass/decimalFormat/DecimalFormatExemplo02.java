@@ -24,10 +24,10 @@ public class DecimalFormatExemplo02 {
 		// Opções de formatação
 		System.out.println("Escolha um formato: ");
 		System.out.print("\n[1] - Padrão número BR     ");
-		System.out.print("[2] - Padrão moeda BR  ");
-		System.out.print("\t[3] - Padrão número US  ");
-		System.out.print("\t[4] - Padrão número US  ");
-		System.out.print("\t[5] - Sair \n");
+		System.out.print("[2] - Padrão moeda BR  \n");
+		System.out.print("[3] - Padrão número US  ");
+		System.out.print("   [4] - Padrão número US  ");
+		System.out.print("\n[5] - Sair \n");
 		
 		// Foi optado por deixar todas as parametrizações dentro da condição
 		while (run) {
@@ -52,8 +52,8 @@ public class DecimalFormatExemplo02 {
 				System.out.println("Resultado: " + case02.format(num));
 				break;
 			case 3:
-				String padraoUs = "###,###.##";
-				DecimalFormat usa = new DecimalFormat(padraoUs);
+				String padraoUsa = "###,###.##";
+				DecimalFormat usa = new DecimalFormat(padraoUsa);
 				System.out.println("Resultado: " + usa.format(num));
 				break;
 			case 4:
@@ -69,9 +69,8 @@ public class DecimalFormatExemplo02 {
 				System.out.println("Digite uma opção válida!"); // Mensagem
 				break;
 			}
-			entrada.close(); // Encerrando o Scanner 
 		}
-
-	}
+		entrada.close();
+	} 
 
 }
