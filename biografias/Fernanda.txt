@@ -14,3 +14,4 @@ R: Sou de São Paulo, mas faz 4 anos e meio que moro na Paraíba.
 R: Estou gostando bastante apesar de não ter prática e não ter experiência com JAVA, vejo que será possível adquirir muito conhecimento com o professor e com os alunos.
 3- Me recomenda algum filme ou série ?
 R: Recomendo a série Mr Robot.
+4- Começou programação agora com a imersão ou já estava estudando alguma coisa anteriormente? (Arnaldo)

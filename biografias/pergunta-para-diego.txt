@@ -13,3 +13,5 @@ R: Breaking Bad
 
 4 - Qual filme ou serie voce me recomenda ?
 R: Dark
+
+5 - O que mais te chama a atenção na área de tecnologia?
