@@ -1,4 +1,4 @@
-package br.com.groupfour.javaflix.javaflix;
+package br.com.grupofour.javaflix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

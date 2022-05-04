@@ -1,4 +1,4 @@
-package br.com.groupfour.javaflix.javaflix;
+package br.com.grupofour.javaflix;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
