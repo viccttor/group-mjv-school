@@ -1,2 +1,7 @@
-package br.com.groupfour.javaflix.javaflix.models;public class SeriesModel {
+package br.com.groupfour.javaflix.javaflix.models;
+
+/**
+ * @author dcardosodo
+ */
+public class SeriesModel {
 }
