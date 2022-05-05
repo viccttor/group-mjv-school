@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
@@ -28,7 +29,7 @@ public class FilmesModel {
     private String titulo;
 
     @Column
-    private LocalDateTime dataLacamento;
+    private LocalDate dataLacamento;
 
     @Column
     private Double notaImdb;
