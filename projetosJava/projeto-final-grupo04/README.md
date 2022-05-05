@@ -28,9 +28,10 @@ Instale MJVer com clonando o repositório
 
 ## Screenshots
 
-- [Caso de uso](https://drive.google.com/file/d/1dmGTrkD596eeozXSV1_BNwkSERJUF7bh/view?usp=sharing)
+[Caso de uso](https://drive.google.com/file/d/1dmGTrkD596eeozXSV1_BNwkSERJUF7bh/view?usp=sharing)
 
 ![Usuário caso de uso](UsecaseUser.jpeg)
+
 
 
 - [Estrtura da aplicação](https://drive.google.com/file/d/1R05lyJ8fD_efIApEuW9z1KCLOuqgTlED/view?usp=sharing)
