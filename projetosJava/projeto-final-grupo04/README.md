@@ -1,11 +1,9 @@
 
 # MJVer
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
+Aplicação desenvolvida na MJV School de Java para avaliação do que foi aprendido no curso.
 
 
-## Descrição
-Aplicação desenvolvida na MJV School Java para avaliação do que foi aprendido no curso.
 ## Instalação
 
 Instale MJVer com clonando o repositório
@@ -53,6 +51,7 @@ a ser preenchido
 ## Autores
 
 - [Deysi Lopes](https://github.com/DeysiLopes)
+- [Nome do autor](perfil github)
 
 
 ## Aprendizados
