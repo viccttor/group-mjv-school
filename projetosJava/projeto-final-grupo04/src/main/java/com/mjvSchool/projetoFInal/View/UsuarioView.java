@@ -1,4 +1,4 @@
-package com.mjv.projetoFinal.View;
+package com.mjvSchool.projetoFInal.View;
 
 public class UsuarioView {
 	public static void main() {
