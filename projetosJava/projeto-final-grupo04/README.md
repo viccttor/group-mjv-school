@@ -1,6 +1,11 @@
 
 # MJVer
 
+  <div>
+     <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
+     <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
+  <div/>
+
 Aplicação desenvolvida na MJV School de Java para avaliação do que foi aprendido no curso.
 
 
@@ -39,19 +44,22 @@ Instale MJVer com clonando o repositório
 a ser preenchido
 ```
 
-## Stack utilizada
 
-**Maven:** 
 
-**SpringBoot:** 
-
-**BD QUALQUER:**
+  
+  ### Stack utilizada:
+  * [JAVA 11](https://www.azul.com/downloads/)  
+  * [SPRING-BOOT](https://start.spring.io/)
+  * [MAVEN]( https://mvnrepository.com/)
+  * [H2 DATABASE]( https://www.h2database.com/html/main.html)
+  * [MYSQL ](  https://www.mysql.com/downloads/)
+ 
 
 
 ## Autores
 
 - [Deysi Lopes](https://github.com/DeysiLopes)
-- [Nome do autor](perfil github)
+- [Diego Cardoso](https://github.com/DiegoCardosoDev)
 
 
 ## Aprendizados
