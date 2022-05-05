@@ -5,8 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
@@ -22,9 +21,18 @@ public class FilmesModel {
 
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @Column
     private String titulo;
+
+    @Column
     private LocalDateTime dataLacamento;
+
+    @Column
     private Double notaImdb;
+
+    @Column
     private LocalTime duracao;
 }
