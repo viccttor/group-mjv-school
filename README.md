@@ -6,7 +6,7 @@
 - Alexandre Nazato
 - Arnaldo Menezes
 - Deysi Lopes
-- Mariana Akeme
 - Osmar Siqueira
 - Victor Henrique
 - Fernanda Albuquerque
+- Marco Aurélio

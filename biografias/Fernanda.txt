@@ -1,0 +1,17 @@
+Olá,tudo bem?
+Me chamo Fernanda, tenho 24 anos, sou formada em Gestão da Tecnologia da Informação.
+Meus hobbies preferidos são: assistir séries, filmes, gosto de fazer caminhada na orla, 
+ir à academia, escutar música, jogar e gosto de pesquisar assuntos sobre a área de TI pois 
+gosto de me manter atualizada.
+
+
+
+Perguntas
+
+1 - De que estado você é ?
+R: Sou de São Paulo, mas faz 4 anos e meio que moro na Paraíba.
+2- O que tá achando da MJV School?
+R: Estou gostando bastante apesar de não ter prática e não ter experiência com JAVA, vejo que será possível adquirir muito conhecimento com o professor e com os alunos.
+3- Me recomenda algum filme ou série ?
+R: Recomendo a série Mr Robot.
+4- Começou programação agora com a imersão ou já estava estudando alguma coisa anteriormente? (Arnaldo)

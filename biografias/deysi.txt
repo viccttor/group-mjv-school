@@ -1,0 +1,9 @@
+Oii sou a Deysi
+
+<<<<<<< HEAD
+Alenxandre já assistiu Game Of Thrones?
+=======
+
+oiê! vc gosta de cantar que tipo de música?
+Geralmente canto as musicas do repertorio do coral mas a que mais gostei cantar foi Eram uma vez da Kell
+>>>>>>> 247b84d8698ac32fd90fa7e682d0746b72ec193c
