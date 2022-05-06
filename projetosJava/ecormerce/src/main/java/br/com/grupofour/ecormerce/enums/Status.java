@@ -4,7 +4,10 @@ public enum Status {
 
     AGUARDANDO,
     APROVADO,
-    CANCELADO
+    CANCELADO;
+
+    Status() {
+    }
 
 
 }

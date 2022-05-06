@@ -4,6 +4,8 @@ import br.com.grupofour.ecormerce.enums.Status;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "tb_ordem")
 public class OrdemDeServico {
@@ -16,6 +18,13 @@ public class OrdemDeServico {
     @ManyToOne
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
+
+    @OneToMany(mappedBy = "ordem")
+    private List<OrdemItems> items = new ArrayList<>();
+
+    public List<OrdemItems> getItems() {
+        return items;
+    }
 
     public OrdemDeServico() {
     }

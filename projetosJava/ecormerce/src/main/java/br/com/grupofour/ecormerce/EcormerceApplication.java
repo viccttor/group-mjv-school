@@ -3,8 +3,10 @@ package br.com.grupofour.ecormerce;
 import br.com.grupofour.ecormerce.enums.Status;
 import br.com.grupofour.ecormerce.models.Cliente;
 import br.com.grupofour.ecormerce.models.OrdemDeServico;
+import br.com.grupofour.ecormerce.models.OrdemItems;
 import br.com.grupofour.ecormerce.models.Produto;
 import br.com.grupofour.ecormerce.repositories.ClienteRepository;
+import br.com.grupofour.ecormerce.repositories.OrdemItemRepository;
 import br.com.grupofour.ecormerce.repositories.OrdemRepository;
 import br.com.grupofour.ecormerce.repositories.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,9 @@ public class EcormerceApplication implements CommandLineRunner {
 	@Autowired
 	private OrdemRepository ordemRepository;
 
+	@Autowired
+	private OrdemItemRepository ordemItemRepository;
+
 
 
 	public static void main(String[] args) {
@@ -36,6 +41,7 @@ public class EcormerceApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		System.out.println("ok");
 
+		/**/
 		Cliente cliente = new Cliente(null, "James", "james@.com");
 		clienteRepository.save(cliente);
 
@@ -50,6 +56,11 @@ public class EcormerceApplication implements CommandLineRunner {
 				Status.AGUARDANDO, cliente);
 
 		ordemRepository.saveAll(Arrays.asList(ordem1,orddem2));
+
+
+
+		OrdemItems items = new OrdemItems(null, 1,3000.0,produto,ordem1);
+		ordemItemRepository.save(items);
 
 
 
