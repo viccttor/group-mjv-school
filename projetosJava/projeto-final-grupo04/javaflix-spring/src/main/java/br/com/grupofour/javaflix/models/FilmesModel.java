@@ -7,7 +7,6 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 /**
@@ -17,7 +16,7 @@ import java.time.LocalTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "filmes")
+@Entity(name = "tb_filmes")
 public class FilmesModel {
 
 
@@ -25,7 +24,7 @@ public class FilmesModel {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column
+    @Column(name = "titulo_filme")
     private String titulo;
 
     @Column

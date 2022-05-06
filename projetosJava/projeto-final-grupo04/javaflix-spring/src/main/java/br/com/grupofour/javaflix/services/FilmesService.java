@@ -17,10 +17,9 @@ public class FilmesService {
     /*INJELÇAO DO REPOSITORY*/
     private FilmesRepository filmesRepository;
 
-
-    /*LISTAR TODOS FILMES*/
-    public List<FilmesModel> listAll(){
-        return this.filmesRepository.findAll();
+    /*METODO PARA LISTAR TODOS*/
+    public List<FilmesModel> findAll() {
+        return filmesRepository.findAll();
     }
 
 

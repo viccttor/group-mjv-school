@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "series")
+@Entity(name = "tb_series")
 public class SeriesModel {
 
 
@@ -24,7 +24,7 @@ public class SeriesModel {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "titulo_series")
+    @Column(name = "titulo_series", nullable = false, length = 30)
     private String titulo;
 
     @Column
@@ -35,4 +35,6 @@ public class SeriesModel {
 
     @Column
     private Integer qtdEpisodios;
+
+    private Integer qtdTemporadas;
 }
