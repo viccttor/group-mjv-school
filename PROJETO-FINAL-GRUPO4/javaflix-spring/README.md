@@ -1,50 +1,17 @@
 
-# MJVer
+# MJV - JAVA  SCHOOL <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />     <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
 
- <div>
-     <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
-     <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
-  <div/>
-
-Aplicação desenvolvida na MJV School de Java para avaliação do que foi aprendido no curso.
-
-
-## Instalação
-
-Instale MJVer com clonando o repositório
-
-```bash
-  git clone https://github.com/viccttor/group-mjv-school.git
-```
+## 💻 Sobre o projeto
+<img src="https://img.shields.io/badge/-JAVAFLIX-red" /> - O Projeto Tem Finalidade de uma Estruuta de API de FIlmes E series, tendo funcionalidades como:
+* Inserir 
+* Procurar por ID
+* Atualizar
+* Deletar
 
 
-## Funcionalidades
+**(CRUD) CREATE - READ - UPDATE - DELETE**
 
-- Cadastro de usuários/filmes/séries/categorias
-- Login do usuário
-- Acesso acervo de filmes/séries
-
-
-
-## Screenshots
-
-- [Caso de uso](https://drive.google.com/file/d/1dmGTrkD596eeozXSV1_BNwkSERJUF7bh/view?usp=sharing)
-
-![Usuário caso de uso](UsecaseUser.jpeg)
-
-
-- [Estrtura da aplicação](https://drive.google.com/file/d/1R05lyJ8fD_efIApEuW9z1KCLOuqgTlED/view?usp=sharing)
-
-![Estrutura da aplicação](mvc.jpeg)
-
-
-## Uso/Exemplos
-
-```
-a ser preenchido
-```
-
-### Stack utilizada:
+### FERRAMENTAS E TECNOLOGIAS 
   * [JAVA 11](https://www.azul.com/downloads/)  
   * [SPRING-BOOT](https://start.spring.io/)
   * [MAVEN]( https://mvnrepository.com/)
@@ -55,13 +22,4 @@ a ser preenchido
 - [Deysi Lopes](https://github.com/DeysiLopes)
 - [Diego Cardoso](https://github.com/DiegoCardosoDev))
 
-
-## Aprendizados
-
-O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e como você superou-os?
-
-
-## Licença
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
