@@ -2,7 +2,7 @@
 # MJV - JAVA  SCHOOL <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />     <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
 
 ## 💻 Sobre o projeto
-<img src="https://img.shields.io/badge/-JAVAFLIX-red" /> - O Projeto Tem Finalidade de uma Estruuta de API de FIlmes E series, tendo funcionalidades como:
+<img src="https://img.shields.io/badge/-JAVAFLIX-red" /> - O Projeto Tem Finalidade de uma Estrutura de API de FIlmes E series, tendo funcionalidades como:
 * Inserir 
 * Procurar por ID
 * Atualizar
@@ -11,7 +11,7 @@
 
 **(CRUD) CREATE - READ - UPDATE - DELETE**
 
-### FERRAMENTAS E TECNOLOGIAS 
+## 🛠 FERRAMENTAS E TECNOLOGIAS 
   * [JAVA 11](https://www.azul.com/downloads/)  
   * [SPRING-BOOT](https://start.spring.io/)
   * [MAVEN]( https://mvnrepository.com/)
