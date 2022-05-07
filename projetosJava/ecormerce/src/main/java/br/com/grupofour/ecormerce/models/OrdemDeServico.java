@@ -67,4 +67,14 @@ public class OrdemDeServico {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+
+    public double getTotal(){
+        double soma = 0.0;
+        for (OrdemItems item: items){
+            soma = soma += item.getSubTotal();
+        }
+        return soma;
+    }
+
+
 }
