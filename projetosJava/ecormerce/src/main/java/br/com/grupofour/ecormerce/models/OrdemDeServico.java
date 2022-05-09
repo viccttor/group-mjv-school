@@ -11,7 +11,7 @@ import java.util.List;
 public class OrdemDeServico {
 
     @Id
-    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Instant momentoDaCompra;
     private Status status;
@@ -21,6 +21,7 @@ public class OrdemDeServico {
 
     @OneToMany(mappedBy = "ordem")
     private List<OrdemItems> items = new ArrayList<>();
+
 
     public List<OrdemItems> getItems() {
         return items;
@@ -68,9 +69,9 @@ public class OrdemDeServico {
         this.cliente = cliente;
     }
 
-    public double getTotal(){
+    public double getTotal() {
         double soma = 0.0;
-        for (OrdemItems item: items){
+        for (OrdemItems item : items) {
             soma = soma += item.getSubTotal();
         }
         return soma;

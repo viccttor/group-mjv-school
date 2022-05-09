@@ -14,7 +14,7 @@ public class OrdemItems {
     private Integer quantidadeDeItems;
     private Double preco;
 
-    @JsonIgnore
+
     @ManyToOne
     @JoinColumn(name = "produto_id")
     private Produto produto;

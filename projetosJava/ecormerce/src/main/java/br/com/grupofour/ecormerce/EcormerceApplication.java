@@ -42,15 +42,16 @@ public class EcormerceApplication implements CommandLineRunner {
 		System.out.println("ok");
 
 		/**/
-		Cliente cliente = new Cliente(null, "James", "james@.com");
-		clienteRepository.save(cliente);
+		Cliente cliente = new Cliente(null, "James Robert", "jamesrobert@.com");
+		Cliente cliente2 = new Cliente(null, "Goku", "goku@.com");
+		clienteRepository.saveAll(Arrays.asList(cliente,cliente2));
 
 		Produto produto = new Produto(null, "Computador", 3000.0);
 		Produto produto2= new Produto(null, "mesa-gamer", 350.0);
 		Produto produto3 = new Produto(null, "headset gamer", 380.0);
 		produtoRepository.saveAll(Arrays.asList(produto,produto2,produto3));
 
-		OrdemDeServico ordem1 = new OrdemDeServico(null,Instant.parse("2022-05-18T11:25:09z"),Status.APROVADO, cliente);
+		OrdemDeServico ordem1 = new OrdemDeServico(null,Instant.parse("2022-05-18T11:25:09z"),Status.APROVADO, cliente2);
 
 		OrdemDeServico orddem2 = new OrdemDeServico(null, Instant.parse("2022-02-18T11:25:09z"),
 				Status.AGUARDANDO, cliente);
@@ -59,8 +60,10 @@ public class EcormerceApplication implements CommandLineRunner {
 
 
 
-		OrdemItems items = new OrdemItems(null, 1,3000.0,produto,ordem1);
-		ordemItemRepository.save(items);
+		OrdemItems items = new OrdemItems(null, 10,3000.0,produto,ordem1);
+		OrdemItems items2 = new OrdemItems(null, 1,350.0,produto2,orddem2);
+		OrdemItems items3 = new OrdemItems(null, 1,380.0,produto3,ordem1);
+		ordemItemRepository.saveAll(Arrays.asList(items, items2, items3));
 
 
 
